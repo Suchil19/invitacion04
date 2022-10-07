@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto|Anton|Rajdhani");
+body {
+  background: #f3f3f3;
+}
+
+header {
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #790da7b9 , #72184567), url("./img/01.png") center no-repeat;
+}
+/*
+header .fa-code {
+  position: absolute;
+  font-size: 50rem;
+  top: -40%;
+  left: 10%;
+  color: rgba(0, 0, 0, 0.1);
+}*/
+header .logo {
+  height: 50vh;
+
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.logo .corner {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #9d03a233;
+  position: absolute;
+  z-index: 1;
+}
+.logo .corner:nth-child(1) {
+  top: 10px;
+  left: 10px;
+  border-right: none;
+  border-bottom: none;
+}
+.logo .corner:nth-child(2) {
+  top: 10px;
+  right: 10px;
+  border-left: none;
+  border-bottom: none;
+}
+.logo .corner:nth-child(3) {
+  bottom: 10px;
+  right: 10px;
+  border-left: none;
+  border-top: none;
+}
+.logo .corner:nth-child(4) {
+  bottom: 10px;
+  left: 10px;
+  border-right: none;
+  border-top: none;
+}
+.logo .title {
+  width: 220px;
+  z-index: 3;
+  position: relative;
+  border-right: 2px solid rgba(64, 64, 64, 0.8);
+  box-shadow: 8px 0 0 #1e1e1e;
+}
+.logo .title h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 4rem;
+  color: #2e2e2ecc !important;
+  line-height: 4rem;
+  margin: 0;
+}
+.logo .title .description {
+  color: #2e2e2ecc;
+  font-family: "Rajdhani", sans-serif;
+  margin: 0;
+}
+.logo .info {
+  width: 260px;
+  height: 120px;
+  color: #2e2e2ecc;
+  padding: 10px 10px;
+  overflow: hidden;
+  z-index: 3;
+  transition: width 0.5s ease;
+}
+.logo .info h2.date {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 3rem;
+  color: #2e2e2ecc;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 3rem;
+  width: 245px;
+}
+.logo .info p.address {
+  width: 245px;
+  margin: 0;
+  padding: 0 10px;
+  color: #2e2e2ecc;
+  font-family: "Raleway", sans-serif;
+}
+
+#main h2.section-title {
+  font-family: "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  background: #249098;
+  padding: 7px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#main p {
+  font-family: "Roboto", sans-serif;
+  color: #2e2e2ecc;
+}
+#main .button {
+  color: #2e2e2ecc;
+  padding: 10px 5px;
+  background: transparent;
+  border: 2px solid #249098;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+#main .button:before {
+  position: absolute;
+  height: 120%;
+  width: 0;
+  top: 0;
+  left: -10%;
+  background: #ffffff;
+  content: " ";
+  transition: all 0.3s;
+  transform: skewX(15deg);
+  z-index: -1;
+}
+#main .button:hover:before {
+  width: 120%;
+}
+#main .contact .fa {
+  color: #aa2a80;
+  margin-right: 5px;
+  width: 20px;
+}
+
+
+/*MAPA*/
+.map-responsive{
+
+  overflow:hidden;
+
+  padding-bottom:20%;
+
+  position:relative;
+
+  height:0;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90%;
+  border: 3px solid  #e9d307;
+
+}
+
+.map-responsive iframe{
+
+  left:0;
+
+  top:0;
+
+  height:100%;
+
+  width:100%;
+
+  position:absolute;
+
+}
+
+@media (max-width: 700px) {
+  .map-responsive{
+
+    overflow:hidden;
+  
+    padding-bottom:70%;
+  
+    position:relative;
+  
+    height:0;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 20px;
+  
+  }
+}
+
+/* Termina el mapa */
+
+
+.section-title{
+	margin-bottom: .5rem;
+}
+
+.section-title h2{
+	font-size: 1.5rem;
+  color: #2e2e2ecc !important;
+	font-weight: 700;
+	text-align: center;
+	margin: 0;
+}
+
+
+
+.section-title h2 span{
+  color: #2e2e2ecc;
+  border-bottom: 3px solid #249098;
+}
+
+/*Galeria*/
+
+.small {
+  font-size: 11px;
+  color: #999;
+  display: block;
+  margin-top: -10px
+}
+
+.cont {
+  text-align: center;
+}
+
+.page-head {
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.page-head .lead {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.btn {
+  -moz-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-lg {
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 1.33333;
+  padding: 10px 16px;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #152836;
+}
+
+.btn-primary {
+  background-color: #152836;
+  border-color: #0e1a24;
+  color: #ffffff;
+}
+
+.btn-primary {
+  border-color: #eeeeee;
+  color: #eeeeee;
+  transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
+}
+
+.page-head h1 {
+  font-size: 42px;
+  margin: 0 0 0px;
+  color: #2c2c2ccc;
+  position: relative;
+  display: inline-block;
+}
+
+.page-head h1 .version {
+  bottom: 0;
+   color: #2e2e2ecc;
+  font-size: 11px;
+  font-style: italic;
+  position: absolute;
+  width: 58px;
+  right: -58px;
+}
+
+.demo-gallery > ul {
+  margin-bottom: 0;
+  padding-left: 15px;
+}
+
+.demo-gallery > ul > li {
+  margin-bottom: 15px;
+  /*width: 520px;*/
+  max-width: 95%;
+  display: inline-block;
+  margin-right: 15px;
+  list-style: outside none none;
+}
+
+.demo-gallery > ul > li a {
+  border: 3px solid #FFF;
+  border-radius: 3px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+.demo-gallery > ul > li a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+
+.demo-gallery > ul > li a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+
+.demo-gallery > ul > li a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+
+.demo-gallery > ul > li a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+.demo-gallery > ul > li a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.demo-gallery .justified-gallery > a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+
+.demo-gallery .justified-gallery > a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+
+.demo-gallery .justified-gallery > a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+
+.demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.demo-gallery .video .demo-gallery-poster img {
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  opacity: 0.8;
+  width: 48px;
+}
+
+.demo-gallery.dark > ul > li a {
+  border: 3px solid #04070a;
+}
